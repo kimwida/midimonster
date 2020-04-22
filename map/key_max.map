@@ -1,0 +1,23 @@
+key_max.EV_KEY.KEY_G 	> sacn_key_max.449
+key_max.EV_KEY.KEY_H 	> sacn_key_max.450
+key_max.EV_KEY.KEY_I 	> sacn_key_max.451
+key_max.EV_KEY.KEY_J 	> sacn_key_max.452
+key_max.EV_KEY.KEY_K 	> sacn_key_max.453
+
+key_max.EV_KEY.KEY_O 	> sacn_key_max.457
+key_max.EV_KEY.KEY_P 	> sacn_key_max.458
+key_max.EV_KEY.KEY_Q 	> sacn_key_max.459
+key_max.EV_KEY.KEY_R 	> sacn_key_max.460
+key_max.EV_KEY.KEY_S 	> sacn_key_max.461
+
+key_max.EV_KEY.KEY_W	 	> sacn_key_max.465
+key_max.EV_KEY.KEY_X 		> sacn_key_max.466
+key_max.EV_KEY.KEY_Y 		> sacn_key_max.467
+key_max.EV_KEY.KEY_Z 		> sacn_key_max.468
+key_max.EV_KEY.KEY_GRAVE 	> sacn_key_max.469
+
+key_max.EV_KEY.KEY_RIGHTBRACE 	> sacn_key_max.473
+key_max.EV_KEY.KEY_SEMICOLON 	> sacn_key_max.474
+key_max.EV_KEY.KEY_APOSTROPHE 	> sacn_key_max.475
+key_max.EV_KEY.KEY_COMMA 	> sacn_key_max.476
+key_max.EV_KEY.KEY_DOT		> sacn_key_max.477
