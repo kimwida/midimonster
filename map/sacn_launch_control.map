@@ -1,0 +1,5 @@
+launch_control.ch0.cc{21..28} 	> sacn_launch_control.{1..8}
+launch_control.ch0.cc{41..48} 	> sacn_launch_control.{11..18}
+launch_control.ch0.note{9..12}	> sacn_launch_control.{21..24}
+launch_control.ch0.note{25..28}	> sacn_launch_control.{31..34}
+launch_control.ch0.cc{114..117}	> sacn_launch_control.{41..44}

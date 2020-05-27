@@ -1,0 +1,16 @@
+xtouch_mini.ch10.cc{1..8} 		> sacn_xtouch_mini.{101..108}
+xtouch_mini.ch10.cc9 			> sacn_xtouch_mini.109
+
+xtouch_mini.ch10.note{0..7}		> sacn_xtouch_mini.{111..118}
+xtouch_mini.ch10.note{8..15}	> sacn_xtouch_mini.{121..128}
+xtouch_mini.ch10.note{16..23}	> sacn_xtouch_mini.{131..138}
+
+xtouch_mini.ch10.cc{11..18} 		> sacn_xtouch_mini.{201..208}
+xtouch_mini.ch10.cc10 			> sacn_xtouch_mini.209
+
+xtouch_mini.ch10.note{24..31}	> sacn_xtouch_mini.{211..218}
+xtouch_mini.ch10.note{32..39}	> sacn_xtouch_mini.{221..228}
+xtouch_mini.ch10.note{40..47}	> sacn_xtouch_mini.{231..238}
+
+
+

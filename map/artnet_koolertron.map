@@ -1,0 +1,56 @@
+koolertron.EV_KEY.KEY_1 	> artnet_koolertron.11
+koolertron.EV_KEY.KEY_2 	> artnet_koolertron.12
+koolertron.EV_KEY.KEY_3 	> artnet_koolertron.13
+koolertron.EV_KEY.KEY_4 	> artnet_koolertron.14
+koolertron.EV_KEY.KEY_5 	> artnet_koolertron.15
+koolertron.EV_KEY.KEY_6 	> artnet_koolertron.16
+koolertron.EV_KEY.KEY_7 	> artnet_koolertron.17
+koolertron.EV_KEY.KEY_8 	> artnet_koolertron.18
+
+koolertron.EV_KEY.KEY_9 	> artnet_koolertron.21
+koolertron.EV_KEY.KEY_0 	> artnet_koolertron.22
+koolertron.EV_KEY.KEY_A 	> artnet_koolertron.23
+koolertron.EV_KEY.KEY_B 	> artnet_koolertron.24
+koolertron.EV_KEY.KEY_C 	> artnet_koolertron.25
+koolertron.EV_KEY.KEY_D 	> artnet_koolertron.26
+koolertron.EV_KEY.KEY_E 	> artnet_koolertron.27
+koolertron.EV_KEY.KEY_F 	> artnet_koolertron.28
+
+koolertron.EV_KEY.KEY_G 	> artnet_koolertron.31
+koolertron.EV_KEY.KEY_H 	> artnet_koolertron.32
+koolertron.EV_KEY.KEY_I 	> artnet_koolertron.33
+koolertron.EV_KEY.KEY_J 	> artnet_koolertron.34
+koolertron.EV_KEY.KEY_K 	> artnet_koolertron.35
+koolertron.EV_KEY.KEY_L 	> artnet_koolertron.36
+koolertron.EV_KEY.KEY_M 	> artnet_koolertron.37
+koolertron.EV_KEY.KEY_N 	> artnet_koolertron.38
+
+koolertron.EV_KEY.KEY_O 	> artnet_koolertron.41
+koolertron.EV_KEY.KEY_P 	> artnet_koolertron.42
+koolertron.EV_KEY.KEY_Q 	> artnet_koolertron.43
+koolertron.EV_KEY.KEY_R 	> artnet_koolertron.44
+koolertron.EV_KEY.KEY_S 	> artnet_koolertron.45
+koolertron.EV_KEY.KEY_T 	> artnet_koolertron.46
+koolertron.EV_KEY.KEY_U 	> artnet_koolertron.47
+koolertron.EV_KEY.KEY_V 	> artnet_koolertron.48
+
+koolertron.EV_KEY.KEY_W	 			> artnet_koolertron.51
+koolertron.EV_KEY.KEY_X 			> artnet_koolertron.52
+koolertron.EV_KEY.KEY_Y 			> artnet_koolertron.53
+koolertron.EV_KEY.KEY_Z 			> artnet_koolertron.54
+koolertron.EV_KEY.KEY_GRAVE 		> artnet_koolertron.55
+koolertron.EV_KEY.KEY_MINUS 		> artnet_koolertron.56
+koolertron.EV_KEY.KEY_EQUAL 		> artnet_koolertron.57
+koolertron.EV_KEY.KEY_LEFTBRACE 	> artnet_koolertron.58
+
+koolertron.EV_KEY.KEY_RIGHTBRACE 	> artnet_koolertron.61
+koolertron.EV_KEY.KEY_SEMICOLON 	> artnet_koolertron.62
+koolertron.EV_KEY.KEY_APOSTROPHE 	> artnet_koolertron.63
+koolertron.EV_KEY.KEY_COMMA 		> artnet_koolertron.64
+koolertron.EV_KEY.KEY_DOT			> artnet_koolertron.65
+koolertron.EV_KEY.KEY_SLASH 		> artnet_koolertron.66
+koolertron.EV_KEY.KEY_BACKSPACE		> artnet_koolertron.67
+koolertron.EV_KEY.KEY_DELETE 		> artnet_koolertron.68
+;koolertron.EV_KEY.KEY_DELETE 		> feedback.getin
+;feedback.putcolor1 > xtouch_mini.ch10.note8
+

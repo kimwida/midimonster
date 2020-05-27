@@ -1,0 +1,53 @@
+koolertron.EV_KEY.KEY_1 	> sacn_koolertron.1
+koolertron.EV_KEY.KEY_2 	> sacn_koolertron.2
+koolertron.EV_KEY.KEY_3 	> sacn_koolertron.3
+koolertron.EV_KEY.KEY_4 	> sacn_koolertron.4
+koolertron.EV_KEY.KEY_5 	> sacn_koolertron.5
+koolertron.EV_KEY.KEY_6 	> sacn_koolertron.6
+koolertron.EV_KEY.KEY_7 	> sacn_koolertron.7
+koolertron.EV_KEY.KEY_8 	> sacn_koolertron.8
+
+koolertron.EV_KEY.KEY_9 	> sacn_koolertron.481
+koolertron.EV_KEY.KEY_0 	> sacn_koolertron.482
+koolertron.EV_KEY.KEY_A 	> sacn_koolertron.483
+koolertron.EV_KEY.KEY_B 	> sacn_koolertron.484
+koolertron.EV_KEY.KEY_C 	> sacn_koolertron.485
+koolertron.EV_KEY.KEY_D 	> sacn_koolertron.486
+koolertron.EV_KEY.KEY_E 	> sacn_koolertron.487
+koolertron.EV_KEY.KEY_F 	> sacn_koolertron.488
+
+koolertron.EV_KEY.KEY_G 	> sacn_koolertron.449
+koolertron.EV_KEY.KEY_H 	> sacn_koolertron.450
+koolertron.EV_KEY.KEY_I 	> sacn_koolertron.451
+koolertron.EV_KEY.KEY_J 	> sacn_koolertron.452
+koolertron.EV_KEY.KEY_K 	> sacn_koolertron.453
+koolertron.EV_KEY.KEY_L 	> sacn_koolertron.454
+koolertron.EV_KEY.KEY_M 	> sacn_koolertron.455
+koolertron.EV_KEY.KEY_N 	> sacn_koolertron.456
+
+koolertron.EV_KEY.KEY_O 	> sacn_koolertron.457
+koolertron.EV_KEY.KEY_P 	> sacn_koolertron.458
+koolertron.EV_KEY.KEY_Q 	> sacn_koolertron.459
+koolertron.EV_KEY.KEY_R 	> sacn_koolertron.460
+koolertron.EV_KEY.KEY_S 	> sacn_koolertron.461
+koolertron.EV_KEY.KEY_T 	> sacn_koolertron.462
+koolertron.EV_KEY.KEY_U 	> sacn_koolertron.463
+koolertron.EV_KEY.KEY_V 	> sacn_koolertron.464
+
+koolertron.EV_KEY.KEY_W	 	> sacn_koolertron.465
+koolertron.EV_KEY.KEY_X 		> sacn_koolertron.466
+koolertron.EV_KEY.KEY_Y 		> sacn_koolertron.467
+koolertron.EV_KEY.KEY_Z 		> sacn_koolertron.468
+koolertron.EV_KEY.KEY_GRAVE 		> sacn_koolertron.469
+koolertron.EV_KEY.KEY_MINUS 		> sacn_koolertron.470
+koolertron.EV_KEY.KEY_EQUAL 		> sacn_koolertron.471
+koolertron.EV_KEY.KEY_LEFTBRACE 	> sacn_koolertron.472
+
+koolertron.EV_KEY.KEY_RIGHTBRACE 	> sacn_koolertron.473
+koolertron.EV_KEY.KEY_SEMICOLON 	> sacn_koolertron.474
+koolertron.EV_KEY.KEY_APOSTROPHE 	> sacn_koolertron.475
+koolertron.EV_KEY.KEY_COMMA 		> sacn_koolertron.476
+koolertron.EV_KEY.KEY_DOT		> sacn_koolertron.477
+koolertron.EV_KEY.KEY_SLASH 		> sacn_koolertron.478
+koolertron.EV_KEY.KEY_BACKSPACE	> sacn_koolertron.479
+koolertron.EV_KEY.KEY_DELETE 		> sacn_koolertron.480
