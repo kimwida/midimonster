@@ -28,6 +28,16 @@ last_button28 = 0
 last_button29 = 0
 last_button30 = 0
 last_all_uplight = 0
+last_songlist1 = 0
+last_songlist2 = 0
+last_songlist3 = 0
+last_songlist4 = 0
+last_songlist5 = 0
+last_songlist6 = 0
+last_songlist7 = 0
+last_songlist8 = 0
+last_songlist9 = 0
+
 
 function variable_set()
 	last_pin = 0
@@ -122,26 +132,80 @@ function songlist_push(num, value)
 	end
 end
 
-function songlist_release(num, value)
+function songlist_doit(num, value)
 	if ( value == 1) then
-		if ( num == 48 ) then 
-			output("put_apc_color56", apc_g)
-		elseif ( num == 49 ) then
-			output("put_apc_color57", apc_g)
-		elseif ( num == 50 ) then
-			output("put_apc_color58", apc_g)
-		elseif ( num == 51 ) then
-			output("put_apc_color59", apc_g)
-		elseif ( num == 52 ) then
-			output("put_apc_color60", apc_g)
-		elseif ( num == 53 ) then
-			output("put_apc_color61", apc_g)
-		elseif ( num == 54 ) then
-			output("put_apc_color62", apc_g)
-		elseif ( num == 55 ) then
-			output("put_apc_color63", apc_g)
-		elseif ( num == 83 ) then
-			output("put_apc_color82", apc_g)
+		if ( num == 56 ) then
+			if ( last_songlist1 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist1 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist1 = 0
+			end
+		elseif ( num == 57 ) then
+			if ( last_songlist2 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist2 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist2 = 0
+			end
+		elseif ( num == 58 ) then
+			if ( last_songlist3 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist3 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist3 = 0
+			end
+		elseif ( num == 59 ) then
+			if ( last_songlist4 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist4 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist4 = 0
+			end
+		elseif ( num == 60 ) then
+			if ( last_songlist5 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist5 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist5 = 0
+			end
+		elseif ( num == 61 ) then
+			if ( last_songlist6 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist6 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist6 = 0
+			end
+		elseif ( num == 62 ) then
+			if ( last_songlist7 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist7 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist7 = 0
+			end
+		elseif ( num == 63 ) then
+			if ( last_songlist8 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_r_b)
+				last_songlist8 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist8 = 0
+			end
+		elseif ( num == 82 ) then
+			if ( last_songlist9 == 0 ) then -- if it is first pressed
+				output("put_apc_color".. num, apc_g_b)
+				last_songlist9 = 1
+			else
+				output("put_apc_color".. num, apc_g)
+				last_songlist9 = 0
+			end
 		end
 	end
 end
@@ -345,25 +409,25 @@ function get_apc_in0(value) num = 0; allpin_doit(num, value) end
 function get_apc_in64(value) num = 64; allpin_doit(num, value) end
 
 -- 9 songlists' led process
-function get_apc_in56(value) num =56 ; songlist_push(num, value) end
-function get_apc_in57(value) num =57 ; songlist_push(num, value) end
-function get_apc_in58(value) num =58 ; songlist_push(num, value) end
-function get_apc_in59(value) num =59 ; songlist_push(num, value) end
-function get_apc_in60(value) num =60 ; songlist_push(num, value) end
-function get_apc_in61(value) num =61 ; songlist_push(num, value) end
-function get_apc_in62(value) num =62 ; songlist_push(num, value) end
-function get_apc_in63(value) num =63 ; songlist_push(num, value) end
-function get_apc_in82(value) num =82 ; songlist_push(num, value) end
+function get_apc_in56(value) num =56 ; songlist_doit(num, value) end
+function get_apc_in57(value) num =57 ; songlist_doit(num, value) end
+function get_apc_in58(value) num =58 ; songlist_doit(num, value) end
+function get_apc_in59(value) num =59 ; songlist_doit(num, value) end
+function get_apc_in60(value) num =60 ; songlist_doit(num, value) end
+function get_apc_in61(value) num =61 ; songlist_doit(num, value) end
+function get_apc_in62(value) num =62 ; songlist_doit(num, value) end
+function get_apc_in63(value) num =63 ; songlist_doit(num, value) end
+function get_apc_in82(value) num =82 ; songlist_doit(num, value) end
 
-function get_apc_in48(value) num = 48; songlist_release(num, value) end
-function get_apc_in49(value) num = 49; songlist_release(num, value) end
-function get_apc_in50(value) num = 50; songlist_release(num, value) end
-function get_apc_in51(value) num = 51; songlist_release(num, value) end
-function get_apc_in52(value) num = 52; songlist_release(num, value) end
-function get_apc_in53(value) num = 53; songlist_release(num, value) end
-function get_apc_in54(value) num = 54; songlist_release(num, value) end
-function get_apc_in55(value) num = 55; songlist_release(num, value) end
-function get_apc_in83(value) num = 83; songlist_release(num, value) end
+function get_apc_in48(value) num = 48; end
+function get_apc_in49(value) num = 49; end 
+function get_apc_in50(value) num = 50; end
+function get_apc_in51(value) num = 51; end
+function get_apc_in52(value) num = 52; end
+function get_apc_in53(value) num = 53; end
+function get_apc_in54(value) num = 54; end
+function get_apc_in55(value) num = 55; end
+function get_apc_in83(value) num = 83; end
 
 function get_apc_in6(value) num = 6; backlight_doit(num, value) end
 function get_apc_in70(value) num = 70; backlight_doit(num, value) end
