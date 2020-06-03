@@ -11,7 +11,6 @@ max_falcon20.EV_KEY.KEY_9			> sacn_max_falcon20.10
 max_falcon20.EV_KEY.KEY_0			> sacn_max_falcon20.11
 max_falcon20.EV_KEY.KEY_A			> sacn_max_falcon20.12
 max_falcon20.EV_KEY.KEY_B			> sacn_max_falcon20.13
-max_falcon20.EV_KEY.KEY_B			> feedback.default_light
 max_falcon20.EV_KEY.KEY_C			> sacn_max_falcon20.14
 max_falcon20.EV_KEY.KEY_D			> sacn_max_falcon20.15
 max_falcon20.EV_KEY.KEY_E			> sacn_max_falcon20.16
