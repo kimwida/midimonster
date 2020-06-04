@@ -1,0 +1,121 @@
+#MonsterBox Ip Address
+ip_monsterBox=`hostname -I`
+
+#sACN target(Avolites Console Computer) Ip Address
+ip_AvoConsole='2.1.1.36'
+#ip_AvoConsole=$1
+
+DeviceCount=`aseqdump -l | awk 'NR>4' | wc -l`
+echo "$DeviceCount"
+
+#28:0
+DeviceMidiPort=`aseqdump -l | awk 'NR>4 { printf "%s",$1}'`
+echo "$DeviceMidiPort"
+
+#Launch Control
+DeviceMidiName=`aseqdump -l | awk 'NR>4 { printf "%s%s",$2,$3}'`
+echo "$DeviceMidiName"
+
+echo "" > test.map
+echo "[backend sacn]" > test.cfg
+echo "bind = $ip_monsterBox" >> test.cfg
+
+echo "[sacn AvoConsole]" >> test.cfg
+echo "universe = 101" >> test.cfg
+echo "priority = 101" >> test.cfg
+echo "destination = $ip_AvoConsole" >> test.cfg
+
+echo "" >> test.cfg
+echo "[backend midi]" >> test.cfg
+echo "" >> test.cfg
+
+num="1"
+if [ "$DeviceCount" = "0" ]
+then
+	echo "No Midi Device"
+else
+	for device in $DeviceMidiPort
+	do
+		#Midi Device connect 
+		echo "[midi $DeviceMidiName$num]" >> test.cfg
+		echo "read = $device" >> test.cfg
+		echo "write = $device" >> test.cfg
+		#num=`expr $num + 1`
+		
+		echo "$DeviceMidiName$num.ch5.note{0..100} > AvoConsole.{1..101}" >> test.map 
+		echo "$DeviceMidiName$num.ch5.cc{48..56} > AvoConsole.{148..156}" >> test.map
+	done
+fi
+
+KeyboardCount=`ls /dev/input/ | grep event1 | wc -l`
+
+if [ "$KeyboardCount" = "0" ]
+then
+	echo "No Keyboard"
+else
+	echo "[evdev key]" >> test.cfg
+	echo "device = /dev/input/event1" >> test.cfg
+		
+	echo "[sacn key_out]" >> test.cfg
+	echo "universe = 102" >> test.cfg
+	echo "priority = 101" >> test.cfg
+	echo "destination = $ip_AvoConsole" >> test.cfg
+	
+	echo "key.EV_KEY.KEY_1 	> key_out.1" >> test.map
+	echo "key.EV_KEY.KEY_2 	> key_out.2" >> test.map
+	echo "key.EV_KEY.KEY_3 	> key_out.3" >> test.map
+	echo "key.EV_KEY.KEY_4 	> key_out.4" >> test.map
+	echo "key.EV_KEY.KEY_5 	> key_out.5" >> test.map
+	echo "key.EV_KEY.KEY_6 	> key_out.6" >> test.map
+	echo "key.EV_KEY.KEY_7 	> key_out.7" >> test.map
+	echo "key.EV_KEY.KEY_8 	> key_out.8" >> test.map
+
+	echo "key.EV_KEY.KEY_9 	> key_out.481" >> test.map
+	echo "key.EV_KEY.KEY_0 	> key_out.482" >> test.map
+	echo "key.EV_KEY.KEY_A 	> key_out.483" >> test.map
+	echo "key.EV_KEY.KEY_B 	> key_out.484" >> test.map
+	echo "key.EV_KEY.KEY_C 	> key_out.485" >> test.map
+	echo "key.EV_KEY.KEY_D 	> key_out.486" >> test.map
+	echo "key.EV_KEY.KEY_E 	> key_out.487" >> test.map
+	echo "key.EV_KEY.KEY_F 	> key_out.488" >> test.map
+
+	echo "key.EV_KEY.KEY_G 	> key_out.449" >> test.map
+	echo "key.EV_KEY.KEY_H 	> key_out.450" >> test.map
+	echo "key.EV_KEY.KEY_I 	> key_out.451" >> test.map
+	echo "key.EV_KEY.KEY_J 	> key_out.452" >> test.map
+	echo "key.EV_KEY.KEY_K 	> key_out.453" >> test.map
+	echo "key.EV_KEY.KEY_L 	> key_out.454" >> test.map
+	echo "key.EV_KEY.KEY_M 	> key_out.455" >> test.map
+	echo "key.EV_KEY.KEY_N 	> key_out.456" >> test.map
+
+	echo "key.EV_KEY.KEY_O 	> key_out.457" >> test.map
+	echo "key.EV_KEY.KEY_P 	> key_out.458" >> test.map
+	echo "key.EV_KEY.KEY_Q 	> key_out.459" >> test.map
+	echo "key.EV_KEY.KEY_R 	> key_out.460" >> test.map
+	echo "key.EV_KEY.KEY_S 	> key_out.461" >> test.map
+	echo "key.EV_KEY.KEY_T 	> key_out.462" >> test.map
+	echo "key.EV_KEY.KEY_U 	> key_out.463" >> test.map
+	echo "key.EV_KEY.KEY_V 	> key_out.464" >> test.map
+
+	echo "key.EV_KEY.KEY_W	 	> key_out.465" >> test.map
+	echo "key.EV_KEY.KEY_X 		> key_out.466" >> test.map
+	echo "key.EV_KEY.KEY_Y 		> key_out.467" >> test.map
+	echo "key.EV_KEY.KEY_Z 		> key_out.468" >> test.map
+	echo "key.EV_KEY.KEY_GRAVE 	> key_out.469" >> test.map
+	echo "key.EV_KEY.KEY_MINUS 	> key_out.470" >> test.map
+	echo "key.EV_KEY.KEY_EQUAL 	> key_out.471" >> test.map
+	echo "key.EV_KEY.KEY_LEFTBRACE 	> key_out.472" >> test.map
+
+	echo "key.EV_KEY.KEY_RIGHTBRACE	> key_out.473" >> test.map
+	echo "key.EV_KEY.KEY_SEMICOLON 	> key_out.474" >> test.map
+	echo "key.EV_KEY.KEY_APOSTROPHE	> key_out.475" >> test.map
+	echo "key.EV_KEY.KEY_COMMA 	> key_out.476" >> test.map
+	echo "key.EV_KEY.KEY_DOT	> key_out.477" >> test.map
+	echo "key.EV_KEY.KEY_SLASH 	> key_out.478" >> test.map
+	echo "key.EV_KEY.KEY_BACKSPACE	> key_out.479" >> test.map
+	echo "key.EV_KEY.KEY_DELETE 	> key_out.480" >> test.map
+fi
+
+echo "" >> test.cfg
+echo "[map]" >> test.cfg
+cat < test.map >> test.cfg

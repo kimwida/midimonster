@@ -1,0 +1,2 @@
+chmod 777 /dev/snd/seq
+mini_httpd -C /etc/mini-httpd.conf

@@ -1,0 +1,1 @@
+cat /sys/devices/virtual/thermal/thermal_zone0/temp | sed 's/^\(.\{2\}\)/\1./' | sed 's/$/ C/'

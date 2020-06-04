@@ -12,13 +12,3 @@ xtouch_mini.ch10.note{24..31}	> artnet_xtouch_mini.{211..218}
 xtouch_mini.ch10.note{32..39}	> artnet_xtouch_mini.{221..228}
 xtouch_mini.ch10.note{40..47}	> artnet_xtouch_mini.{231..238}
 
-xtouch_mini.ch10.note30 > feedback.get_knob7
-feedback.put_knob7 > xtouch_mini.ch10.cc17
-
-xtouch_mini.ch10.note29 > feedback.get_knob6
-feedback.put_knob6 > xtouch_mini.ch10.cc16
-
-
-;artnet_xtouch_mini.301 > feedback.getin
-;artnet_xtouch_mini.300 > feedback.getin
-;feedback.putcolor1 > xtouch_mini.ch10.note8

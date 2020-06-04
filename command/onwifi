@@ -1,0 +1,2 @@
+nmcli r wifi on
+nmcli dev wifi connect "kimhong" password "20150606"

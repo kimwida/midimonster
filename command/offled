@@ -1,0 +1,2 @@
+echo 0 > /sys/class/leds/rockpis\:blue\:user/brightness
+echo 0 > /sys/class/leds/rockpis\:green\:power/brightness

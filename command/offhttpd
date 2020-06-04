@@ -1,0 +1,1 @@
+kill `ps -aux | grep mini_httpd | awk 'NR<=1 {printf $2}'`
