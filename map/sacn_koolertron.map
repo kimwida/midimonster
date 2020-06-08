@@ -11,6 +11,7 @@ koolertron.EV_KEY.KEY_9			> sacn_koolertron.10
 koolertron.EV_KEY.KEY_0			> sacn_koolertron.11
 koolertron.EV_KEY.KEY_A			> sacn_koolertron.12
 koolertron.EV_KEY.KEY_B			> sacn_koolertron.13
+koolertron.EV_KEY.KEY_B			> feedback.reset_light
 koolertron.EV_KEY.KEY_C			> sacn_koolertron.14
 koolertron.EV_KEY.KEY_D			> sacn_koolertron.15
 koolertron.EV_KEY.KEY_E			> sacn_koolertron.16
